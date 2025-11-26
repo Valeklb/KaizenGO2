@@ -459,3 +459,81 @@ body {
   font-weight: 700;
   letter-spacing: 0.2px;
 }
+.hidden {
+  display: none !important;
+}
+/* ===== TUTORIAL OVERLAY ===== */
+.tutorial {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.tutorial.hidden {
+  display: none !important;
+}
+
+#tutorial-highlight {
+  position: absolute;
+  border: 2px solid #00aaff;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0, 170, 255, 0.7);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.tutorial-box {
+  position: absolute;
+  bottom: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 14px;
+  color: #fff;
+  max-width: 90%;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.tutorial-box p {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.tutorial-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+/* ===== TUTORIAL TRANSPORTE ===== */
+#tutorial-transporte {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#tutorial-transporte.hidden {
+  display: none !important;
+}
+
+#tutorial-transporte-highlight {
+  position: absolute;
+  border: 2px solid #00aaff;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0, 170, 255, 0.7);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
