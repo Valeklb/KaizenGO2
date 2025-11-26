@@ -232,6 +232,16 @@
           <option value="consulta">Consulta</option>
         </select>
 
+        <!-- CAMPO DE COMPROVANTE (NOVO) -->
+        <div id="box-comprovante" class="hidden">
+          <label><strong>Anexar comprovante:</strong></label>
+          <input
+            type="file"
+            id="comprovante"
+            accept="image/*,application/pdf"
+          />
+        </div>
+
         <input type="date" id="data-autorizacao" />
 
         <div class="row buttons">
@@ -254,6 +264,34 @@
     <script>
       new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
+
+    <!-- ONBOARDING TUTORIAL -->
+    <div id="tutorial-overlay" class="tutorial hidden">
+      <div id="tutorial-highlight"></div>
+
+      <div class="tutorial-box">
+        <p id="tutorial-text"></p>
+
+        <div class="tutorial-buttons">
+          <button id="tutorial-skip" class="btn alt">Pular</button>
+          <button id="tutorial-next" class="btn">Próximo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TUTORIAL TRANSPORTE -->
+    <div id="tutorial-transporte" class="tutorial hidden">
+      <div id="tutorial-transporte-highlight"></div>
+
+      <div class="tutorial-box">
+        <p id="tutorial-transporte-text"></p>
+
+        <div class="tutorial-buttons">
+          <button id="tutorial-transporte-skip" class="btn alt">Pular</button>
+          <button id="tutorial-transporte-next" class="btn">Próximo</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Script principal -->
     <script src="script.js"></script>
